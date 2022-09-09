@@ -46,7 +46,7 @@ COPY . /var/www
 COPY --chown=www:www . /var/www
 
  RUN chown -R www:www /var/www/storage
- RUN chmod -R 777 /var/www/storage/framework/sessions/9CUXZ3ShWTEUXHUYbfg3jkHJ9gkhVox4DhiCwshq
+ RUN chmod -R 777 /var/www/storage
  RUN chmod -R 777 storage bootstrap/cache
  RUN chmod -R 777 ./
  
