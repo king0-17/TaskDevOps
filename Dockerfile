@@ -54,7 +54,7 @@ COPY --chown=www:www . /var/www
 # Change current user to www
 USER www
 
-
+RUN composer require predis/predis
 # RUN apt-get update && apt-get install -y curl
 RUN composer install
 RUN composer update
