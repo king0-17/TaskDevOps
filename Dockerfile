@@ -56,8 +56,8 @@ USER www
 
 
 # RUN apt-get update && apt-get install -y curl
-# RUN composer install
-# RUN composer update
+RUN composer install
+RUN composer update
 # RUN composer require laravel/breeze --dev
 # RUN php artisan breeze:install
 # RUN npm install && npm run dev &
