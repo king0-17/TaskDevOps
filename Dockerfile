@@ -26,9 +26,9 @@ RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 
-# RUN apk add autoconf && pecl install -o -f redis \
-# && rm -rf /tmp/pear \
-# && docker-php-ext-enable redis && apk del autoconf
+RUN apk add autoconf && pecl install -o -f redis \
+&& rm -rf /tmp/pear \
+&& docker-php-ext-enable redis && apk del autoconf
 
 #RUN npm build
 # COPY package.json package-lock.json /var/www
