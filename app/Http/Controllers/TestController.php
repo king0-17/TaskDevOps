@@ -15,7 +15,8 @@ class TestController extends Controller
     {
         $this->redis->set('user_details', json_encode([
                 'first_name' => 'Alex', 
-                'last_name' => 'Malakasssssss'
+                'last_name' => 'Malakasssssss',
+                'id' => '1'
             ])
         );
     }
